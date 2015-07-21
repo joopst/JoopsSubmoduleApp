@@ -25,6 +25,20 @@
 			remoteGlobalIDString = C855CCED1B58FA3000178B81;
 			remoteInfo = JoopsSubmoduleApp;
 		};
+		C8F559331B5E806300FFD3C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8F5592E1B5E806300FFD3C6 /* SampleLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8E85A151B57A5BE00F78AA5;
+			remoteInfo = SampleLib;
+		};
+		C8F559351B5E806300FFD3C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8F5592E1B5E806300FFD3C6 /* SampleLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8E85A201B57A5BE00F78AA5;
+			remoteInfo = SampleLibTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +57,7 @@
 		C855CD0A1B58FA3000178B81 /* JoopsSubmoduleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoopsSubmoduleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C855CD0F1B58FA3000178B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C855CD101B58FA3000178B81 /* JoopsSubmoduleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JoopsSubmoduleAppTests.m; sourceTree = "<group>"; };
+		C8F5592E1B5E806300FFD3C6 /* SampleLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SampleLib.xcodeproj; path = SampleLib/SampleLib.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +84,7 @@
 				C855CCF01B58FA3000178B81 /* JoopsSubmoduleApp */,
 				C855CD0D1B58FA3000178B81 /* JoopsSubmoduleAppTests */,
 				C855CCEF1B58FA3000178B81 /* Products */,
+				C8F5592E1B5E806300FFD3C6 /* SampleLib.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +138,15 @@
 				C855CD0F1B58FA3000178B81 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8F5592F1B5E806300FFD3C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8F559341B5E806300FFD3C6 /* libSampleLib.a */,
+				C8F559361B5E806300FFD3C6 /* SampleLibTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +216,12 @@
 			mainGroup = C855CCE51B58FA3000178B81;
 			productRefGroup = C855CCEF1B58FA3000178B81 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C8F5592F1B5E806300FFD3C6 /* Products */;
+					ProjectRef = C8F5592E1B5E806300FFD3C6 /* SampleLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C855CCED1B58FA3000178B81 /* JoopsSubmoduleApp */,
@@ -198,6 +229,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C8F559341B5E806300FFD3C6 /* libSampleLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSampleLib.a;
+			remoteRef = C8F559331B5E806300FFD3C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C8F559361B5E806300FFD3C6 /* SampleLibTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SampleLibTests.xctest;
+			remoteRef = C8F559351B5E806300FFD3C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C855CCEC1B58FA3000178B81 /* Resources */ = {
@@ -424,6 +472,7 @@
 				C855CD161B58FA3000178B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C855CD171B58FA3000178B81 /* Build configuration list for PBXNativeTarget "JoopsSubmoduleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +481,7 @@
 				C855CD191B58FA3000178B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
